@@ -6,7 +6,7 @@ volatile int led_delay = 500;
 /*******************************************************************************
 * Code
 *******************************************************************************/
-void TaskReadSerial(void *pvParameters) {
+void vReadSerialTask(void *pvParameters) {
   Serial.begin(115200);
   while (1) {
     if (Serial.available() > 0) {
@@ -20,7 +20,7 @@ void TaskReadSerial(void *pvParameters) {
   }
 }
 
-void TaskBlinkLED(void *pvParameters) {
+void vBlinkLEDTask(void *pvParameters) {
   pinMode(LED_PIN, OUTPUT);
   while (1) {
     digitalWrite(LED_PIN, HIGH);           
@@ -32,8 +32,8 @@ void TaskBlinkLED(void *pvParameters) {
 
 void setup() {
   xTaskCreate(
-    TaskReadSerial,    
-    "ReadSerial",      
+    vReadSerialTask,    
+    "ReadSerialTask",      
     2048,              
     NULL,              
     1,                 
@@ -41,8 +41,8 @@ void setup() {
   );
 
   xTaskCreate(
-    TaskBlinkLED,     
-    "BlinkLED",       
+    vBlinkLEDTask,     
+    "BlinkLEDTask",       
     2048,             
     NULL,              
     2,               
