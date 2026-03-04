@@ -2,7 +2,6 @@
 
 ![FreeRTOS](https://img.shields.io/badge/RTOS-FreeRTOS-blueviolet?style=for-the-badge&logo=freertos)
 ![MCU](https://img.shields.io/badge/Hardware-ESP32-E7352C?style=for-the-badge&logo=espressif)
-![Author](https://img.shields.io/badge/Author-Nguyen%20Viet%20Trung-orange?style=for-the-badge)
 
 Chào mừng bạn đến với kho lưu trữ thực hành **FreeRTOS** trên dòng chip ESP32. Tài liệu này được biên soạn nhằm mục đích chia sẻ kiến thức về hệ điều hành thời gian thực thông qua các ví dụ code trực quan và thực tế.
 
@@ -86,4 +85,4 @@ Thay vì tạo nhiều Task gây tốn RAM (Stack), ta sử dụng **Daemon Task
 
 ---
 **THANK YOU!** 🙌  
-*Tài liệu được đóng góp bởi **Nguyễn Việt Trung**. Hy vọng nó giúp ích cho hành trình chinh phục Embedded System của bạn!*
+*Tài liệu được đóng góp bởi **Trung Nguyễn**. Hy vọng nó giúp ích cho hành trình chinh phục Embedded System của bạn!*
